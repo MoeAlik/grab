@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WARN=0
+WARN=1
 PWD=$(pwd)
 SCRIPT=$(basename $0)
 
